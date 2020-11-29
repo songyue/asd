@@ -24,6 +24,7 @@ Would you like to define your dev dependencies (require-dev) interactively [yes]
 
 {
     "name": "songyue/test",
+    "description": "Asd PHP Framework",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -43,7 +44,8 @@ composer.json
 查看文件内容
 cat composer.json
 {
-    "name": "songyue/test",
+    "name": "pandadev/asd",
+    "description": "Asd PHP Framework",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -56,8 +58,17 @@ cat composer.json
     "require": {}
 }
 
-安装项目 composer install
-ls
-composer.json vendor
+提交github 省略
+登录packagist.org提交项目 省略
+尝试使用composer 安装此框架（包） 
+composer create-project pandadev/asd dev-main asd-project   
+这里有个注意的地方，因为github最近更新了默认branch的名字master为main，所以这里使用 dev-main 分支
+
+
+packagist提交包后，默认是手动同步代码，配置自动同步方式如下：
+打开github项目主页 https://github.com/songyue/asd/settings
+点击设置 https://github.com/songyue/asd/settings
+点击Webhooks 新建 https://github.com/songyue/asd/settings/hooks/new
+Payload URL 和 Secret 在packagist网站获取
 
 
